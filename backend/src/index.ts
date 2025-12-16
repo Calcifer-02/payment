@@ -14,7 +14,7 @@ const PORT = Number(process.env.PORT) || 4001;
 
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL || 'https://monke-team-frontend.vercel.app'
+    origin: true
 }));
 app.use(express.json());
 
