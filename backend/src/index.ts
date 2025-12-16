@@ -18,6 +18,10 @@ app.use(cors({
 }));
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Payment service is running!');
+});
+
 // ---------------------------------
 
 const YouKassa = new YooCheckout({
